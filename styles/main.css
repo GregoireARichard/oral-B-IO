@@ -1,16 +1,22 @@
 body{
-  margin-top:0;
+  margin:0;
   background-color: black;
+  overflow-x: hidden;
 }
 div.container{/*container principal*/
-  width: full-width;
+  width: 100%;
   margin: 0;
   background: black;
-  transition: 0.5s;/*Permet l'animation*/
+  transition: 0.4s;/*Permet l'animation*/
 }
-div.container:hover{
+.container:hover{
   background-color: #0057b8;
   border-bottom: 3px solid white;
+}
+div.container:hover  button.sign_up{
+  background-color:white;
+  color:#0057b8;
+
 }
 div.layer{/*permet de centrer les éléments a,h1 et img*/
   width:960px;
@@ -19,7 +25,7 @@ div.layer{/*permet de centrer les éléments a,h1 et img*/
 }
 div.bloc_img{
   width: 100px;
-  padding:25px 0px 0px 25px;
+  padding:18px 0px 0px 25px;
   margin-right: 25px;
 }
 img.img_oral_b{
@@ -29,17 +35,24 @@ img.img_oral_b{
 h1.h1_top{
   color:white;
   font-family: 'Roboto',sans-serif;
+  font-size:25px;
   text-align: center;
-  padding-left: 25px;
+  margin-left: 20px;
 }
-a.sign_up{
+button.sign_up{
   color:white;
+  background-color: black;
   margin-left:80px;
-  text-decoration: none;
+  margin-top:13px;
   font-family: 'Roboto', sans-serif;
-  padding-top :25px;
   font-size: 25px;
-  border:1px solid white;
-  border-radius: 15px;
-  -moz-border-radius:15px;
+  height:40px;
+  cursor:pointer;
+  border: 2px solid white;
+  border-radius: 100rem;
+  -moz-border-radius:100rem;
+}
+button.sign_up:hover{
+  background-color:white;
+  color:#0057b8;
 }
