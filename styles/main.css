@@ -2,12 +2,14 @@ body{
   margin:0;
   background-color: black;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 div.container{/*container principal*/
   width: 100%;
   margin: 0;
   background: black;
   transition: 0.4s;/*Permet l'animation*/
+  display: flex;
 }
 .container:hover{
   background-color: #0057b8;
@@ -45,7 +47,7 @@ button.sign_up{
   margin-left:80px;
   margin-top:13px;
   font-family: 'Roboto', sans-serif;
-  font-size: 25px;
+  font-size: 22px;
   height:40px;
   cursor:pointer;
   border: 2px solid white;
@@ -55,4 +57,29 @@ button.sign_up{
 button.sign_up:hover{
   background-color:white;
   color:#0057b8;
+}
+.buffer{ /*tampon*/
+  height:100px;
+}
+.main_container{
+  width:100%;
+}
+div [class^="_block"]{ /*blocks principaux*/
+  width:100vw;
+  margin-left:-17.5px;
+}
+div[class^="block_"]{/*sous_blocks*/
+  width:49.3vw;
+  height:300px;
+  display: flex;
+  border:1px solid white;
+}
+div[class^="a"]{
+  float:left;
+}
+div[class^="b"]{
+  float:right;
+}
+.block_1_b, .block_2_a, .block_3_b{
+  background-color:white;
 }
