@@ -69,10 +69,10 @@ div [class^="_block"]{ /*blocks principaux*/
   margin-left:-17.5px;
 }
 div[class^="block_"]{/*sous_blocks*/
-  width:49.3vw;
-  height:300px;
+  width:50vw;
+  height:100vw;
   display: flex;
-  border:1px solid white;
+
 }
 div[class^="a"]{
   float:left;
@@ -82,4 +82,7 @@ div[class^="b"]{
 }
 .block_1_b, .block_2_a, .block_3_b{
   background-color:white;
+}
+::-webkit-scrollbar{
+  display: none;
 }
