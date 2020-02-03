@@ -1,3 +1,45 @@
-*{
-  color:red;
+body{
+  margin-top:0;
+  background-color: black;
+}
+div.container{/*container principal*/
+  width: full-width;
+  margin: 0;
+  background: black;
+  transition: 0.5s;/*Permet l'animation*/
+}
+div.container:hover{
+  background-color: #0057b8;
+  border-bottom: 3px solid white;
+}
+div.layer{/*permet de centrer les éléments a,h1 et img*/
+  width:960px;
+  margin:0 auto;
+  display:flex;
+}
+div.bloc_img{
+  width: 100px;
+  padding:25px 0px 0px 25px;
+  margin-right: 25px;
+}
+img.img_oral_b{
+  width:100%;
+  height: auto;
+}
+h1.h1_top{
+  color:white;
+  font-family: 'Roboto',sans-serif;
+  text-align: center;
+  padding-left: 25px;
+}
+a.sign_up{
+  color:white;
+  margin-left:80px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  padding-top :25px;
+  font-size: 25px;
+  border:1px solid white;
+  border-radius: 15px;
+  -moz-border-radius:15px;
 }
