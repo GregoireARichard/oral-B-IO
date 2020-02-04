@@ -1,0 +1,35 @@
+.header{
+  font-family: 'Neutra 2 Text Demi', sans-serif;
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+main{
+  width:100vw;
+  height:45vh;
+  font-family: 'Neutra 2 Text Demi',sans-serif;
+}
+.block_1{
+  background-image:url(images/nomdelimage.jpg);
+}
+.block_2{
+  background-image: url(images/image2.jpg);
+}
+.block_3{
+  background-image: url(images/images3.jpg);
+}
+.button{
+  border : 1px solid #FFF;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background-color: #000;
+}
+footer{
+  border-top: 1px solid #5272BF;
+  display:flex;
+}
+footer a {
+  text-decoration: none;
+  color:#FFF;
+}
