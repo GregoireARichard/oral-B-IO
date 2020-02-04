@@ -54,31 +54,43 @@ button.sign_up{
   border-radius: 100rem;
   -moz-border-radius:100rem;
 }
-button.sign_up:hover{
-  background-color:white;
-  color:#0057b8;
-}
-.buffer{ /*tampon*/
-  height:100px;
-}
 .main_container{
   width:100%;
 }
 div [class^="_block"]{ /*blocks principaux*/
   width:100vw;
-  margin-left:-17.5px;
+  margin-left:0px;
+  display: flex;
 }
 div[class^="block_"]{/*sous_blocks*/
   width:50vw;
-  height:100vw;
+  height:100vh;
   display: flex;
 
 }
-div[class^="a"]{
-  float:left;
+div[class$="_a"]{
+  justify-content: flex-start;
 }
-div[class^="b"]{
-  float:right;
+div[class$="_b"]{
+  justify-content: flex-end;
+}
+.block_1_a{
+  background-image: url(../images/oralbio.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.block_2_b{
+  background-image: url(../images/image2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.block_3_a{
+  background-image: url(../images/image3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 .block_1_b, .block_2_a, .block_3_b{
   background-color:white;
@@ -86,3 +98,17 @@ div[class^="b"]{
 ::-webkit-scrollbar{
   display: none;
 }
+/*.anchor{
+  width:20px;
+  height:20px;
+  margin:0 auto;
+  padding-bottom: 30px;
+}
+.arrow{
+  display:inline-block;
+  width:15px;
+  height:15px;
+  border-top: 2px solid #000;
+  border-right:2px solid #000;
+  transform:rotate(135deg);
+}*/
