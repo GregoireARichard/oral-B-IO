@@ -1,7 +1,16 @@
+html{
+  scroll-behavior:smooth;
+}
+::-webkit-scrollbar{
+  display: none;
+}
 body{
   margin:0;
   overflow-x: hidden;
   font-family: 'Neutra 2 Text Demi', sans-serif;
+}
+h2{
+  color:white;
 }
 .header{
   width:100vw;
@@ -11,7 +20,7 @@ body{
 }
 a{
   text-decoration: none;
-    color:#FFF;
+  color:#FFF;
 }
 .user_img{
   width:5%;
@@ -26,7 +35,7 @@ img.logo{
 }
 ul.menu{
   list-style-type: none;
-  margin-left:35px;;
+  margin-left:35px;
 }
 li.menu:first-of-type, li.menu:nth-of-type(2){
   border-right:1px solid white;
@@ -58,30 +67,30 @@ main{
   margin-top:-17px;
   background-image:url(../images/fond_brosse-min.jpg);
   background-size:85%;
-  background-color:black;
+  background-color:#000;
   background-repeat: no-repeat;
   background-position: center;
-  height:70vh;
+  height:100vh;
   width:100vw;
 }
 .sub_block_1{
-  width:500px;
+  width:40vw;
   color:white;
-  padding: 200px 0px 0px 290px;
+  padding: 200px 0px 0px 200px;
 }
 .block_2{
   margin-top: -17px;
   background-image: url(../images/brosse_lavage-min.jpg);
-  background-size:62%;
+  background-size:100%;
   background-repeat: no-repeat;
   background-position: left;
   background-color: #000;
-  height:70vh;
+  height:100vh;
   width:100vw;
 }
 .sub_block_2{
   width: 500px;
-  padding: 200px 0px 0px 600px;
+  padding: 100px 0px 0px 900px;
   color:white;
 }
 .block_3{
@@ -89,8 +98,17 @@ main{
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  height:70vh;
+  height:100vh;
   width:100vw;
+}
+.arrow_to_top{
+  float:right;
+  color:#FFF;
+  padding-right:25px;
+  transition:0.5s
+}
+.arrow_to_top:hover{
+  color:#050C1F;
 }
 .button{
   border : 1px solid #FFF;
@@ -113,109 +131,79 @@ button:hover{
   display: flex;
   justify-content: space-between;
 }
-h2{
-  color:white;
-}
 ul.menu_footer{
   margin-left:35px;
 }
-.footer {
-  margin-top:1225px;
-  width:100vw;
-  background-color: #030511;
-  position: relative;
-  height: auto;
-  background-color: #070617;
+/* flèche ne pas modifier pour le responsive*/
+.arrow-container {
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateZ(0deg);
 }
-
-.footer .col {
-  width: 190px;
-  height: auto;
-  float: left;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  padding: 0px 20px 20px 20px;
+.arrow-container_2 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 198%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateZ(0deg);
 }
-.footer .col h1 {
-  font-family: inherit;
-  font-size: 12px;
-  line-height: 17px;
-  padding: 20px 0px 5px 300px !important;
-  color: rgba(255,255,255,0.2);
-  font-weight: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.250em;
-}
-.footer .col ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.footer .col ul li {
-  color: #999999;
-  font-size: 14px;
-  font-family: inherit;
-  font-weight: bold;
-  padding: 5px 0px 5px 300px;
+.arrow-container:hover {
   cursor: pointer;
-  transition: .2s;
-  -webkit-transition: .2s;
-  -moz-transition: .2s;
 }
-.social ul li {
-  display: inline-block;
-  padding-right: 5px !important;
+.arrow-container:hover .arrow {
+  top: 50%;
+}
+.arrow-container:hover .arrow:before {
+  transform: translate(-50%, -50%) rotateZ(-30deg);
+}
+.arrow-container:hover .arrow:after {
+  transform: translate(-50%, -50%) rotateZ(30deg);
 }
 
-.footer .col ul li:hover {
-  color: #ffffff;
-  transition: .1s;
-  -webkit-transition: .1s;
-  -moz-transition: .1s;
+.arrow {
+  position: absolute;
+  left: 50%;
+  transition: all 0.4s ease;
 }
-.clearfix {
-  clear: both;
+.arrow:before, .arrow:after {
+  transition: all 0.4s ease;
+  content: "";
+  display: block;
+  position: absolute;
+  transform-origin: bottom right;
+  background: #fff;
+  width: 4px;
+  height: 50px;
+  border-radius: 10px;
+  transform: translate(-50%, -50%) rotateZ(-45deg);
 }
-@media only screen and (min-width: 1280px) {
-  .contain {
-    width: 1200px;
-    margin: 0 auto;
-  }
+.arrow:after {
+  transform-origin: bottom left;
+  transform: translate(-50%, -50%) rotateZ(45deg);
 }
-@media only screen and (max-width: 1139px) {
-  .contain .social {
-    width: 1000px;
-    display: block;
-  }
-  .social h1 {
-    margin: 0px;
-  }
+.arrow:nth-child(1) {
+  opacity: 0.3;
+  top: 35%;
 }
-@media only screen and (max-width: 950px) {
-  .footer .col {
-    width: 33%;
-  }
-  .footer .col h1 {
-    font-size: 14px;
-  }
-  .footer .col ul li {
-    font-size: 13px;
-  }
+.arrow:nth-child(2) {
+  opacity: 0.6;
+  top: 55%;
 }
-@media only screen and (max-width: 500px) {
-    .footer .col {
-      width: 50%;
-    }
-    .footer .col h1 {
-      font-size: 14px;
-    }
-    .footer .col ul li {
-      font-size: 13px;
-    }
+.arrow:nth-child(3) {
+  opacity: 0.9;
+  top: 75%;
 }
-@media only screen and (max-width: 340px) {
-  .footer .col {
-    width: 100%;
-  }
+.footer{
+  margin-top:1850px;
+  height:30vh;
+  width:100vw;
+  display: flex;
+  color:white;
+  background-color: #030511;
 }
