@@ -1,66 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <title>iO Oral-B</title>
   <meta name="Oral-B" content="Oral-B">
   <link rel="stylesheet" href="../styles/secondary.css">
-  <link href="//db.onlinewebfonts.com/c/2dfdd50666261171b4c312994fb35e48?family=Neutraface+2+Text+Demi" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--<link href="//db.onlinewebfonts.com/c/2dfdd50666261171b4c312994fb35e48?family=Neutraface+2+Text+Demi" rel="stylesheet" type="text/css"/>-->
 </head>
 <body>
   <header>
     <div class="header">
-      <img src="images/" alt="oral b logo" title="logo">
-      <a href="#" alt="connection">Connection</a>
-      <ul>
-        <li><img src="images/logo.png" alt="logo" title="logo"></li>
-        <li><a href="#">Boutique  |</a></li>
-        <li><a href="#">Offre  |</a></li>
-        <li><a href="#">Enregistrer votre produit </a></li>
-        <li style="float:right;"><input type="text" name="search" value="search" placeholder="Recherche"></li>
-      </ul>
+      <div class="header_1">
+          <img src="../images/logo.png" alt="oral b logo" title="logo" class="logo">
+
+        <a href="#" style="float:right;"><img src="../images/user.png" alt="connection" title="connection" class="user_img"> Connection</a>
+      </div>
+      <div class="header_2">
+        <ul class="menu">
+          <li class="menu"><a href="#">Boutique  </a></li>
+          <li class="menu"><a href="#">Offre  </a></li>
+          <li class="menu"><a href="#">Enregistrer votre produit </a></li>
+          <li class="menu"><input type="text" name="search" placeholder="search"></li>
+        </ul>
+      </div>
     </div>
   </header>
   <main>
     <div class="block_1">
-      <p>Découvrez le prix de l’innovation de l’année 2020,
-        l’iO <br>
-        Oral-B, brosse à dent connectée qui utilise <br>
-        l’intelligence artificielle.
-      </p>
+      <div class="sub_block_1">
+        <p>Découvrez le prix de l’innovation de l’année 2020,
+          l’iO <br>
+          Oral-B, brosse à dent connectée qui utilise <br>
+          l’intelligence artificielle.
+        </p>
+     </div>
     </div>
     <div class="block_2">
-      <p>Une brosse à dent qui combine la douce énergie des
-        poils micro-vibrants avec la tête de brosse ronde
-        inspirée par les dentistes d’Oral-B, le tout alimenté
-        par un système d’entraînement magnétique lisse,
-        premier du genre</p>
+      <div class="sub_block_2">
+        <p>Une brosse à dent qui combine la douce énergie des
+          poils <br>micro-vibrants avec la tête de brosse ronde
+          inspirée par les dentistes <br> d’Oral-B, le tout alimenté
+          par un système d’entraînement magnétique lisse,
+          premier du genre</p>
+      </div>
     </div>
     <div class="block_3">
-      <button type="button" name="info" class="button info">En savoir plus</button>
-      <button type="button" name="commande" class="button precommand">Précommande</button>
+      <div class="button_block">
+        <button type="button" name="info" class="button info">En savoir plus</button>
+        <button type="button" name="commande" class="button precommand">Précommande</button>
+      </div>
     </div>
   </main>
-  <footer>
-    <div class="footer_1">
-      <h2>Obtenir de l'aide</h2><br>
-      <a href="#">Contactez nous</a>
-      <a href="#">Des questions</a>
-      <a href="#">Services après ventes France</a>
-      <a href="#">Services après vente Belgique</a>
-    </div>
-    <div class="footer_2">
-      <h2>Sites connexes</h2><br>
-      <a href="#">Dental care</a>
-      <a href="#">Fixodent</a>
-      <a href="#">Envie de plus</a>
-      <a href="#">Braun</a>
-    </div>
-    <div class="footer_3">
-      <h2>Mentions légales</h2><br>
-      <a href="#">Politique de confidentialité</a>
-      <a href="#">Recrutement</a>
-    </div>
-  </footer>
+  <div class="footer">
+    <div class="contain">
+      <div class="col">
+        <h2>Obtenir de l'aide</h2>
+        <ul>
+          <li>Contactez nous</li>
+          <li>Des questions</li>
+          <li>Services après vente France</li>
+          <li>Service après vente Belgique</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h2>Sites connexes</h2>
+        <ul>
+          <li>DentalCare</li>
+          <li>FixoDent</li>
+          <li>Envie de plus</li>
+          <li>Braun</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h2>Mention légales</h2>
+        <ul>
+          <li>Politique de confidentialité</li>
+          <li>Recrutement</li>
+        </ul>
+      </div>
+<div class="clearfix"></div>
+</div>
+</div>
 </body>
 </html>
