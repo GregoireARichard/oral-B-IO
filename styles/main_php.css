@@ -7,35 +7,62 @@ body{
 }
 /* HEADER */
 #header{
-  background-color: #050C1F;
   margin: 0;
-  height: 60px;
+  height: 42vh;
+}
+nav{
+  display:flex;
+  justify-content: space-around;
 }
 .headerTop{
   height: 60px;
-  display: flex;
-  justify-content: space-between;
+  margin-top:250px;
 }
-.headerBottom{
-  height: 60px;
-  background-color: #050C1F;
-  display: flex;
-  justify-content: space-around;
+ul{
+  margin-left:35px;
+  list-style-type: none;
 }
-.flex-row {
-  width: 960px;
+li.top_menu{
+  display: inline;
+  padding: 0px 30px 0px 15px;
+  margin-top:15px;
+}
+li.top_menu:nth-last-of-type(2), li.top_menu:nth-last-of-type(3){
+  border-right:1px solid white;
+}
+li.top_menu{
+}
+li.top_menu a{
+  color:white;
+  text-decoration: none;
+}
+input[type="text"].input_top{
+  width:347px;
+  height:50px;
+  border: 1px solid #0072B9;
+  border-radius:25px;
+  background-color:#FFF;
+  margin-top: 15px;
+}
+.main_title{
+  width:100vw;
   margin: 0 auto;
-  flex-direction: row;
-  align-items: center;
+  text-align: center;
 }
-nav{
-  display: none;
-}
-.hamburger:hover nav{
-  display: block;
-}
-/* MAIN */
 
+/* MAIN */
+main{
+  height:500vh;
+  background-image:url(../images/bigBrosse.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.brush_sumup{
+  width:350px;
+  padding: 450px 0px 0px 70px;
+}
+
+/****FORM****/
 .btn_div{
   width:500px;
   margin: 0 auto;
@@ -155,4 +182,60 @@ input[type="submit"]:hover{
 .footer_3_text{
   color: #807F7F;
   font-weight: lighter;
+}
+/****ARROW***/
+.arrow-container {
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateZ(0deg);
+}
+.arrow-container:hover {
+  cursor: pointer;
+}
+.arrow-container:hover .arrow {
+  top: 50%;
+}
+.arrow-container:hover .arrow:before {
+  transform: translate(-50%, -50%) rotateZ(-30deg);
+}
+.arrow-container:hover .arrow:after {
+  transform: translate(-50%, -50%) rotateZ(30deg);
+}
+
+.arrow {
+  position: absolute;
+  left: 50%;
+  transition: all 0.4s ease;
+}
+.arrow:before, .arrow:after {
+  transition: all 0.4s ease;
+  content: "";
+  display: block;
+  position: absolute;
+  transform-origin: bottom right;
+  background: #fff;
+  width: 4px;
+  height: 50px;
+  border-radius: 10px;
+  transform: translate(-50%, -50%) rotateZ(-45deg);
+}
+.arrow:after {
+  transform-origin: bottom left;
+  transform: translate(-50%, -50%) rotateZ(45deg);
+}
+.arrow:nth-child(1) {
+  opacity: 0.3;
+  top: 35%;
+}
+.arrow:nth-child(2) {
+  opacity: 0.6;
+  top: 55%;
+}
+.arrow:nth-child(3) {
+  opacity: 0.9;
+  top: 75%;
 }
