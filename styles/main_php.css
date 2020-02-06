@@ -62,33 +62,33 @@ main{
   background-position: center;
   background-size:60%;
 }
-.brush_sumup{
+.appear_1{
   width:350px;
   padding: 650px 0px 0px 100px;
 }
-.brush_sumup h2{
+.appear_1 h2{
   padding-right:575px;
 }
-.modif_head{
+.appear_2{
   width:350px;
   margin: 0px 0px 0px 1100px;
   z-index: 0;
 }
 
 /**pour allonger les border, mettre une div entre chaque paragraphes et lui mettre un border et la placer où on veut*/
-.sevenmods{
+.appear_3{
   width:350px;
   padding:670px 0px 0px 50px;
 }
-.AI{
+.appear_4{
   width:350px;
   padding: 30px 0px 0px 1100px;
 }
-.bluetooth{
+.appear_5{
   width:350px;
   padding:148px 0px 0px 70px;
 }
-.quickreload{
+.appear_6{
   width:350px;
   padding: 620px 0px 0px 70px;
 }
@@ -304,11 +304,30 @@ input[type="submit"]:hover{
 p[class^="footer_"]:hover{
   cursor: pointer;
 }
-@media only screen and (max-width: 600px){
-  a.arrow_container{
+@media only screen and (max-width:813px){
+  .arrow_container{
+    display:none;
+  }
+  .arrow{
     visibility: hidden;
   }
   div[class^="line_"]{
     display:none;
+  }
+  main{
+    height:200vh;
+    background-size:150%;
+
+  }
+  .headerTop{
+    width:100vw;
+    margin:0 auto;
+    text-align: center;
+    display:flex;
+  }
+  div[class^="appear_"]{
+    margin:0;
+    padding:0;
+    float:right;
   }
 }
