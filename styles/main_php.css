@@ -11,7 +11,7 @@ body{
 /* HEADER */
 #header{
   margin: 0;
-  height: 42vh;
+  /*height: 42vh;*/
 }
 nav{
   display:flex;
@@ -303,9 +303,12 @@ input[type="submit"]:hover{
 p[class^="footer_"]:hover{
   cursor: pointer;
 }
-@media screen and (max-width:813px){
+@media screen and (max-width:660px){
   html{
     overflow-x: hidden;
+  }
+  nav{
+    display:none;
   }
   .arrow_container{
     display:none;
@@ -327,19 +330,26 @@ p[class^="footer_"]:hover{
     margin:0 auto;
     text-align: center;
     display:flex;
+    height:50vh;
+    background-image: url(../images/fond_brosse-min.jpg);
+    background-size:80%;
+    background-repeat: no-repeat;
+    background-color:#000;
+    background-position: center;
   }
   h1{
     font-size: 14px;
+    padding-top:140px;
   }
   .container{
     width:25vw;
   }
   div[class^="appear_"]{
-    padding:0px 0px 0px 15px;
+    padding:0px 0px 0px 30px;
     margin:0;
     float:left;
     width:25vw;
-    float: right;
+
   }
   div[class^="appear_"] p{
     font-size: 9px;
@@ -362,7 +372,7 @@ p[class^="footer_"]:hover{
     height:45px;
   }
   .footer{
-    height:30vh;
+    height:45vh;
     display: flex;
     justify-content: none;
     margin:0 auto;
@@ -377,5 +387,12 @@ p[class^="footer_"]:hover{
 
 }
 @media screen and (max-width:1366px){
+  a.arrow_container{
+    display:none;
+  }
+  .arrow{
+    visibility: hidden;
+  }
+  div[class^="line_"]{}
 
 }
