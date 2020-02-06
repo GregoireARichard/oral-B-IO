@@ -161,7 +161,6 @@ input[type="text"],input[type="email"],select{
   color:#807f7f;
 }
 input[type='submit']{
-  border-radius: 15px;
   background-color:inherit;
   border:none;
   color:#FFF;
@@ -304,7 +303,10 @@ input[type="submit"]:hover{
 p[class^="footer_"]:hover{
   cursor: pointer;
 }
-@media only screen and (max-width:813px){
+@media screen and (max-width:813px){
+  html{
+    overflow-x: hidden;
+  }
   .arrow_container{
     display:none;
   }
@@ -315,19 +317,65 @@ p[class^="footer_"]:hover{
     display:none;
   }
   main{
-    height:200vh;
-    background-size:150%;
-
+    height:100vh;
+    background-size:64%;
+    background-position: right;
+    overflow: hidden;
+    margin-bottom:15px;
   }
   .headerTop{
-    width:100vw;
     margin:0 auto;
     text-align: center;
     display:flex;
   }
+  h1{
+    font-size: 14px;
+  }
+  .container{
+    width:25vw;
+  }
   div[class^="appear_"]{
+    padding:0px 0px 0px 15px;
+    margin:0;
+    float:left;
+    width:25vw;
+    float: right;
+  }
+  div[class^="appear_"] p{
+    font-size: 9px;
+  }
+  div[class^="appear_"] h2{
+    font-size:11px;
+  }
+  .div_form{
+    height:55vh;
+    margin-left:40px;
+  }
+  button.btn_form{
+    margin-right:110px;
+    width:270px;
+    height:56px;
+    font-size: 14px;
+  }
+  button.btn_form, input[type="text"],input[type="submit"], select, input[type="email"]{
+    width:208px;
+    height:45px;
+  }
+  .footer{
+    height:30vh;
+    display: flex;
+    justify-content: none;
+    margin:0 auto;
+    text-align: center;
+    padding:0;
+  }
+  div[class^="footer_"]{
+    width:100vw;
     margin:0;
     padding:0;
-    float:right;
   }
+
+}
+@media screen and (max-width:1366px){
+
 }
