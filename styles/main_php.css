@@ -2,7 +2,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  font-family: "Neutraface 2 Text Light", sans-serif;
+  font-family: "Neutraface 2 Text Demi", sans-serif;
   color: #FFF;
   margin: 0;
   background-image: linear-gradient(#050C1F,#292F3F,#2B3141,#333848, #585C69);
@@ -67,21 +67,18 @@ main{
   padding: 650px 0px 0px 100px;
 }
 .brush_sumup h2{
-  border-bottom:1px solid white;
   padding-right:575px;
 }
 .modif_head{
   width:350px;
   margin: 0px 0px 0px 1100px;
+  z-index: 0;
 }
-.modif_head h2{
 
-  border-bottom:1px solid white;
-}
 /**pour allonger les border, mettre une div entre chaque paragraphes et lui mettre un border et la placer où on veut*/
 .sevenmods{
   width:350px;
-  padding:725px 0px 0px 50px;
+  padding:670px 0px 0px 50px;
 }
 .AI{
   width:350px;
@@ -89,12 +86,34 @@ main{
 }
 .bluetooth{
   width:350px;
-  padding:175px 0px 0px 70px;
+  padding:148px 0px 0px 70px;
 }
 .quickreload{
   width:350px;
-  padding: 640px 0px 0px 70px;
+  padding: 620px 0px 0px 70px;
 }
+div[class^="line_"]{
+  border-top:1px solid white;
+}
+.line_1, .line_3, .line_5{
+  width:680px;
+}
+.line_2{
+  width: 50px;
+  padding-right:440px;
+  position:relative;
+  right:83%;
+}
+.line_4{
+  width: 50px;
+  padding-right:490px;
+  position:relative;
+  right:55%;
+}
+.line_6{
+  width:555px;
+}
+
 /****FORM****/
 .btn_div{
   width:500px;
@@ -116,6 +135,7 @@ button:hover{
   cursor: pointer;
 }
 .div_form{
+  padding-bottom: 300px;
   width: 60vw;
   height:10vh;
   display: flex;
@@ -156,9 +176,18 @@ input[type='submit']{
 input[type="submit"]:hover{
   cursor:pointer;
 }
-.footer{
-  margin-top: -20px;
+.warranty{
+  width:100vw;
   height:20vh;
+  margin:0 auto;
+  text-align: center;
+}
+.warranty li{
+  display:inline;
+  padding-left: 15px;
+}
+.footer{
+  height:25vh;
   width:100vw;
   display: flex;
   color: white;
@@ -271,4 +300,15 @@ input[type="submit"]:hover{
 .arrow:nth-child(3) {
   opacity: 0.9;
   top: 75%;
+}
+p[class^="footer_"]:hover{
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px){
+  a.arrow_container{
+    visibility: hidden;
+  }
+  div[class^="line_"]{
+    display:none;
+  }
 }
