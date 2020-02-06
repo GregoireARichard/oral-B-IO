@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
   font-family: "Neutraface 2 Text Light", sans-serif;
   color: #FFF;
@@ -30,7 +33,8 @@ li.top_menu{
 li.top_menu:nth-last-of-type(2), li.top_menu:nth-last-of-type(3){
   border-right:1px solid white;
 }
-li.top_menu{
+li.top_menu:hover{
+
 }
 li.top_menu a{
   color:white;
@@ -56,12 +60,41 @@ main{
   background-image:url(../images/bigBrosse.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size:60%;
 }
 .brush_sumup{
   width:350px;
-  padding: 450px 0px 0px 70px;
+  padding: 650px 0px 0px 100px;
 }
+.brush_sumup h2{
+  border-bottom:1px solid white;
+  padding-right:575px;
+}
+.modif_head{
+  width:350px;
+  margin: 0px 0px 0px 1100px;
+}
+.modif_head h2{
 
+  border-bottom:1px solid white;
+}
+/**pour allonger les border, mettre une div entre chaque paragraphes et lui mettre un border et la placer où on veut*/
+.sevenmods{
+  width:350px;
+  padding:725px 0px 0px 50px;
+}
+.AI{
+  width:350px;
+  padding: 30px 0px 0px 1100px;
+}
+.bluetooth{
+  width:350px;
+  padding:175px 0px 0px 70px;
+}
+.quickreload{
+  width:350px;
+  padding: 640px 0px 0px 70px;
+}
 /****FORM****/
 .btn_div{
   width:500px;
