@@ -2,7 +2,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  font-family: "Neutraface 2 Text Demi", sans-serif;
+  font-family: "Neutraface 2 Text Light", sans-serif;
   color: #FFF;
   margin: 0;
   background-image: linear-gradient(#050C1F,#292F3F,#2B3141,#333848, #585C69);
@@ -90,6 +90,9 @@ a.a_appear{
 .appear_6{
   width:350px;
   padding: 620px 0px 0px 70px;
+}
+div[class^="appear_"]{
+  font-weight: lighter;
 }
 div[class^="line_"]{
   border-top:1px solid white;
