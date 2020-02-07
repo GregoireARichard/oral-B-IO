@@ -33,9 +33,6 @@ li.top_menu{
 li.top_menu:nth-last-of-type(2), li.top_menu:nth-last-of-type(3){
   border-right:1px solid white;
 }
-li.top_menu:hover{
-
-}
 li.top_menu a{
   color:white;
   text-decoration: none;
@@ -72,7 +69,6 @@ main{
 .appear_2{
   width:350px;
   margin: 0px 0px 0px 1100px;
-  z-index: 0;
 }
 
 /**pour allonger les border, mettre une div entre chaque paragraphes et lui mettre un border et la placer où on veut*/
@@ -349,7 +345,6 @@ p[class^="footer_"]:hover{
     margin:0;
     float:left;
     width:25vw;
-
   }
   div[class^="appear_"] p{
     font-size: 9px;
@@ -386,13 +381,75 @@ p[class^="footer_"]:hover{
   }
 
 }
-@media screen and (max-width:1366px){
+@media screen and (max-width:1200px){
   a.arrow_container{
     display:none;
   }
   .arrow{
     visibility: hidden;
   }
-  div[class^="line_"]{}
+  div[class^="line_"]{
+    display:none;
+  }
+  nav{
+    font-size: 9px;
+  }
+  li.top_menu{
+    padding: 0px 30px 0px 10px;
+  }
+  input[type="text"].input_top{
+    margin-top:22px;
+    width:138px;
+    height:20px;
+  }
+  main{
+    height:150vh;
+    background-position: center;
+  }
+  div[class^="appear_"]{
+    margin:0;
 
+  }
+  h2{
+    font-size:20px;
+  }
+  p{
+    font-size:12px;
+  }
+  .appear_1{
+    padding: 120px 0px 0px 450px;
+  }
+  .appear_2{
+    padding-right:25px;
+  }
+  .appear_3{
+    padding:200px 0px 0px 450px;
+  }
+  .appear_4{
+    padding: 50px 50px 0px 0px;
+  }
+  .appear_5{
+    padding:80px 50px 0px 0px;
+  }
+  .appear_6{
+    padding: 270px 0px 0px 0px;
+  }
+  .div_form{
+    height:45vh;
+  }
+  .footer{
+    width:100vw;
+  }
+  .footer p{
+    font-size:12px;
+  }
+  div[class^="footer_"]{
+    width:28vw;
+    padding:0px 350px 0px 350px;
+  }
+  h3{
+    border:none;
+    padding-right:60px;
+    font-size: 14px;
+  }
 }

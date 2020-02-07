@@ -1,158 +1,222 @@
 html{
   scroll-behavior:smooth;
 }
+#header{
+  margin: 0;
+  /*height: 42vh;*/
+}
+nav{
+  display:flex;
+  justify-content: space-around;
+}
+.headerTop{
+  height: 60px;
+  margin-top:250px;
+}
+ul{
+  margin-left:35px;
+  list-style-type: none;
+}
+li.top_menu{
+  display: inline;
+  padding: 0px 30px 0px 15px;
+  margin-top:15px;
+}
+li.top_menu:nth-last-of-type(2), li.top_menu:nth-last-of-type(3){
+  border-right:1px solid white;
+}
+li.top_menu a{
+  color:white;
+  text-decoration: none;
+}
+input[type="text"].input_top{
+  width:347px;
+  height:50px;
+  border: 1px solid #0072B9;
+  border-radius:25px;
+  background-color:#FFF;
+  margin-top: 15px;
+}
 ::-webkit-scrollbar{
   display: none;
 }
+
 body{
   margin:0;
   overflow-x: hidden;
-  font-family: 'Neutra 2 Text Demi', sans-serif;
+  font-family: 'Neutraface 2 Text Demi', sans-serif;
+  background-color: #030511;
 }
+
 h2{
   color:white;
 }
-.header{
-  width:100vw;
-  height:12vh;
-  margin: 0 auto;
-  background: #050C1F;
-}
+
 a{
   text-decoration: none;
   color:#FFF;
 }
-.user_img{
-  width:5%;
-}
-.header_1{
-  border-bottom: 1px solid #707070;
-  display:flex;
-  justify-content: space-between;
-}
-img.logo{
-  padding-left: 100px;
-}
-ul.menu{
-  list-style-type: none;
-  margin-left:35px;
-}
-li.menu:first-of-type, li.menu:nth-of-type(2){
-  border-right:1px solid white;
-  padding-right:20px;
-}
-img.logo{
-  width:5%;
-}
-li.menu{
-  display: inline-block;
-  padding-left:30px;
-}
-li input[type=text]{
-  margin-left:590px;
-}
-input[type=text]{
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border:1px solid white;
-  background-image: url(../images/loupe.png);
 
-}
+
 main{
   width:100vw;
   height:45vh;
   font-family: 'Neutra 2 Text Demi',sans-serif;
 }
+
+.block_voir_plus:hover{
+  border-bottom: 1px solid #707070;
+  color: #FFF;
+}
+
 .block_1{
   margin-top:-17px;
   background-image:url(../images/fond_brosse-min.jpg);
-  background-size:85%;
   background-color:#000;
   background-repeat: no-repeat;
   background-position: center;
-  height:100vh;
-  width:100vw;
+  height:106vh;
+  width:102vw;
 }
 .sub_block_1{
   width:40vw;
   color:white;
-  padding: 200px 0px 0px 200px;
+  padding: 320px 0px 0px 278px;
+  line-height: 30px;
 }
+
+.sub_block_1 p{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.block_voir_plus{
+  color: #707070;
+}
+
 .block_2{
   margin-top: -17px;
   background-image: url(../images/brosse_lavage-min.jpg);
   background-size:100%;
   background-repeat: no-repeat;
   background-position: left;
-  background-color: #000;
   height:100vh;
-  width:100vw;
+  width:102vw;
+  display: flex;
+  justify-content: flex-end;
+  line-height: 30px;
 }
 .sub_block_2{
   width: 500px;
-  padding: 100px 0px 0px 900px;
+  padding: 320px 278px 0px 0px;
   color:white;
+  text-align: right;
 }
+
 .block_3{
   background-image: url(../images/brosse_etui-min.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
   height:100vh;
-  width:100vw;
+  width:102vw;
 }
+
 .arrow_to_top{
-  float:right;
+  display: flex;
+  height: 115vh;
+  justify-content: flex-end;
+  align-items: flex-end;
   color:#FFF;
-  padding-right:25px;
+  padding-right: 75px;
   transition:0.5s
 }
 .arrow_to_top:hover{
   color:#050C1F;
 }
-.button{
-  border : 1px solid #FFF;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  background-color: #000;
-}
-button{
-  color:white;
-  font-size: 20px;
-}
-button:hover{
-  cursor: pointer;
-}
-.button_block{
-  width:1000px;
-  margin:0 auto;
-  padding-top:330px;
-  padding-left:29px;
+
+.button_block {
+  position: absolute;
+  top: 242%;
+  left: 39%;
   display: flex;
+  width: 26vw;
   justify-content: space-between;
 }
+
+.button_info:hover{
+  font-size: 20px;
+  padding: 10px 40px 10px 40px;
+  text-decoration: none;
+  background: linear-gradient(20deg, #5E94E6, #6EA7FF);
+  border-radius: 60px;
+  border: none;
+}
+
+.button_info{
+  font-size: 20px;
+  padding: 10px 40px 10px 40px;
+  text-decoration: none;
+  background: linear-gradient(20deg, #251B3C, #6F4DBE);
+  border-radius: 60px;
+  border: none;
+}
+
+.button_precommand:hover{
+  font-size: 20px;
+  padding: 10px 40px 10px 40px;
+  text-decoration: none;
+  background: linear-gradient(-20deg, #5E94E6, #6EA7FF);
+  border-radius: 60px;
+  border: none;
+}
+
+
+.button_precommand{
+  font-size: 20px;
+  padding: 10px 40px 10px 40px;
+  text-decoration: none;
+  background: linear-gradient(-20deg, #251B3C, #6F4DBE);
+  border-radius: 60px;
+  border: none;
+}
+
 ul.menu_footer{
   margin-left:35px;
 }
+
 /* flèche ne pas modifier pour le responsive*/
+
 .arrow-container {
   display: block;
   width: 100px;
   height: 100px;
   position: absolute;
-  top: 92%;
+  top: 89%;
   left: 50%;
   transform: translate(-50%, -50%) rotateZ(0deg);
 }
+
 .arrow-container_2 {
   display: block;
   width: 100px;
   height: 100px;
   position: absolute;
-  top: 198%;
+  top: 191%;
   left: 50%;
   transform: translate(-50%, -50%) rotateZ(0deg);
 }
+
+.arrow-container_3 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 290%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateZ(0deg);
+}
+
 .arrow-container:hover {
   cursor: pointer;
 }
@@ -187,7 +251,7 @@ ul.menu_footer{
   transform-origin: bottom left;
   transform: translate(-50%, -50%) rotateZ(45deg);
 }
-.arrow:nth-child(1) {
+.arrow:first-child {
   opacity: 0.3;
   top: 35%;
 }
@@ -199,11 +263,535 @@ ul.menu_footer{
   opacity: 0.9;
   top: 75%;
 }
+
 .footer{
-  margin-top:1850px;
-  height:30vh;
+  margin-top: -20px;
+  height:20vh;
   width:100vw;
   display: flex;
-  color:white;
+  color: white;
   background-color: #030511;
+  border-top: 1px solid #807F7F;
+  justify-content: space-around;
+}
+
+.footer_1{
+  width: 260px;
+}
+
+.footer_1_title{
+  color: #807F7F;
+  padding-top: 3px;
+  padding-bottom: 1px;
+  font-weight: bold;
+}
+
+.footer_1_text{
+  color: #807F7F;
+  font-weight: lighter;
+}
+
+.footer_2{
+  width: 260px;
+  margin-left: -600px;
+  margin-right: -600px;
+}
+
+.footer_2_title{
+  color: #807F7F;
+  padding-top: 3px;
+  padding-bottom: 1px;
+  font-weight: bold;
+}
+
+.footer_2_text{
+  color: #807F7F;
+  font-weight: lighter;
+}
+
+.footer_3{
+  width: 260px;
+}
+
+.footer_3_title{
+  color: #807F7F;
+  padding-top: 3px;
+  padding-bottom: 1px;
+  font-weight: bold;
+}
+
+.footer_3_text{
+  color: #807F7F;
+  font-weight: lighter;
+}
+
+
+/******* MEDIAS QUERIES *******/
+
+
+
+@media screen and (min-width: 745px) and (max-width: 1553px){
+  nav{
+    font-size: 9px;
+  }
+  li.top_menu{
+    padding: 0px 30px 0px 10px;
+  }
+  input[type="text"].input_top{
+    margin-top:22px;
+    width:138px;
+    height:20px;
+  }
+
+  .arrow-container{
+    display: none;
+  }
+
+  .arrow_to_top{
+    display: none;
+  }
+
+  .block_1{
+    margin-top:-17px;
+    background-image:url(../images/fond_brosse-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    width:110vw;
+  }
+
+  .sub_block_1 {
+      width: 40vw;
+      color: white;
+      padding: 180px 0px 0px 200px;
+      line-height: 30px;
+  }
+
+  .block_2{
+    background-image: url(../images/brosse_lavage-min.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 600px;
+    width:110vw;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 30px;
+  }
+
+  .sub_block_2 {
+      width: 40vw;
+      color: white;
+      padding: 180px 200px 0px 0px;
+      line-height: 30px;
+  }
+
+  .block_3{
+    background-image: url(../images/brosse_etui-min.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height:600px;
+    width:110vw;
+    margin-top: -22px;
+    border-bottom: 1px solid #807F7F;
+    position: relative;
+  }
+
+  .button_block{
+    position: absolute;
+    top: 32%;
+    left: 35%;
+    display: flex;
+    width: 35vw;
+    justify-content: space-around;
+  }
+
+  .button_info:hover{
+    font-size: 17px;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    background: linear-gradient(20deg, #5E94E6, #6EA7FF);
+    border-radius: 60px;
+    border: none;
+  }
+
+  .button_info{
+    font-size: 17px;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    background: linear-gradient(20deg, #251B3C, #6F4DBE);
+    border-radius: 60px;
+    border: none;
+  }
+
+  .button_precommand:hover{
+    font-size: 17px;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    background: linear-gradient(-20deg, #5E94E6, #6EA7FF);
+    border-radius: 60px;
+    border: none;
+  }
+
+
+  .button_precommand{
+    font-size: 17px;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    background: linear-gradient(-20deg, #251B3C, #6F4DBE);
+    border-radius: 60px;
+    border: none;
+  }
+
+  .footer{
+  height:15vh;
+  width: 110vw;
+  display: flex;
+  color: white;
+  background-color: #030511;
+  }
+
+  .footer_1{
+    width: 320px;
+  }
+
+  .footer_1_title{
+    color: #807F7F;
+    padding-top: 3px;
+    padding-bottom: 1px;
+    font-weight: bold;
+  }
+
+  .footer_1_text{
+    color: #807F7F;
+    font-weight: lighter;
+  }
+
+  .footer_2{
+    width: 320px;
+    margin-left: -450px;
+    margin-right: -500px;
+  }
+
+  .footer_2_title{
+    color: #807F7F;
+    padding-top: 3px;
+    padding-bottom: 1px;
+    font-weight: bold;
+  }
+
+  .footer_2_text{
+    color: #807F7F;
+    font-weight: lighter;
+  }
+
+  .footer_3{
+    width: 320px;
+  }
+
+  .footer_3_title{
+    color: #807F7F;
+    padding-top: 3px;
+    padding-bottom: 1px;
+    font-weight: bold;
+  }
+
+  .footer_3_text{
+    color: #807F7F;
+    font-weight: lighter;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 744px){
+  nav{
+    display:none;
+  }
+
+  .arrow-container{
+    display: none;
+  }
+
+  .arrow_to_top{
+    display: none;
+  }
+
+  .block_1{
+    margin-top:-17px;
+    background-image:url(../images/fond_brosse-min.jpg);
+    background-color:#000;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:105vh;
+    width:103vw;
+    background-size: 300%;
+  }
+
+  .sub_block_1{
+    width:40vw;
+    color:white;
+    padding: 320px 0px 0px 150px;
+    line-height: 30px;
+  }
+
+  .block_2{
+    margin-top: -17px;
+    background-image: url(../images/brosse_lavage-min.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    height:105vh;
+    width:103vw;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 30px;
+    background-size: 199%;
+  }
+
+  .sub_block_2 {
+    width: 40vw;
+    color: white;
+    padding: 400px 150px 0px 0px;
+    line-height: 30px;
+  }
+
+  .block_3{
+    background-image: url(../images/brosse_etui-min.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height:97vh;
+    width:103vw;
+    background-size: 192%;
+  }
+
+  .button_block {
+    position: absolute;
+    top: 240%;
+    left: 16%;
+    display: flex;
+    width: 75vw;
+    justify-content: space-around;
+  }
+
+  .button_info:hover{
+    font-size: 20px;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    background: linear-gradient(20deg, #5E94E6, #6EA7FF);
+    border-radius: 60px;
+    border: none;
+  }
+
+  .button_info{
+    font-size: 20px;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    background: linear-gradient(20deg, #251B3C, #6F4DBE);
+    border-radius: 60px;
+    border: none;
+  }
+
+  .button_precommand:hover{
+    font-size: 20px;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    background: linear-gradient(-20deg, #5E94E6, #6EA7FF);
+    border-radius: 60px;
+    border: none;
+  }
+
+
+  .button_precommand{
+    font-size: 20px;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    background: linear-gradient(-20deg, #251B3C, #6F4DBE);
+    border-radius: 60px;
+    border: none;
+  }
+
+
+}
+
+@media screen and (max-width: 375px){
+
+  .arrow-container{
+    display: none;
+  }
+  .footer{
+    height:45vh;
+    display: flex;
+    justify-content: none;
+    margin:0 auto;
+    text-align: center;
+    padding:0;
+  }
+
+  .arrow_to_top{
+    display: none;
+  }
+
+  .block_1 {
+    margin-top: -17px;
+    background-image: url(../images/fond_brosse-X.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 110vh;
+    width: 110vw;
+    background-size: 110%;
+  }
+
+  .sub_block_1{
+    width:40vw;
+    color:white;
+    padding: 200px 0px 0px 80px;
+    line-height: 30px;
+  }
+
+  .block_2 {
+    background-image: url(../images/brosse_lavage-X.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 110vh;
+    width: 109vw;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 30px;
+  }
+
+  .sub_block_2{
+    width: 170px;
+    padding: 100px 80px 0px 0px;
+    color:white;
+    text-align: right;
+  }
+
+  .block_3{
+    background-image: url(../images/brosse_etui-X.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height:110vh;
+    width:112vw;
+  }
+
+  .button_block {
+    position: absolute;
+    top: 263%;
+    display: flex;
+    width: 45vw;
+    flex-direction: column;
+    left: 5%;
+    height: -5vh;
+  }
+
+  .button_info {
+      font-size: 14px;
+      padding: 10px 40px 10px 40px;
+      text-decoration: none;
+      background: linear-gradient(20deg, #251B3C, #6F4DBE);
+      border-radius: 60px;
+      border: none;
+      margin-bottom: 2vh;
+  }
+
+  .button_precommand {
+      font-size: 14px;
+      padding: 10px 40px 10px 40px;
+      text-decoration: none;
+      background: linear-gradient(-20deg, #251B3C, #6F4DBE);
+      border-radius: 60px;
+      border: none;
+  }
+
+    .footer{
+      height:20vh;
+      width:100vw;
+      display: flex;
+      color: white;
+      background-color: #030511;
+      border-top: 1px solid #807F7F;
+      justify-content: space-around;
+    }
+
+    .footer_2{
+      width: 260px;
+      margin-right: -600px;
+    }
+
+    .footer {
+      height: 20vh;
+      width: 100vw;
+      display: flex;
+      color: white;
+      background-color: #030511;
+      border-top: 1px solid #807F7F;
+      flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 1078px){
+
+  .button_block {
+    position: absolute;
+    top: 260%;
+    left: 11%;
+    display: flex;
+    width: 59vw;
+    justify-content: space-between;
+  }
+
+}
+
+/*@media screen and (min-width: 744px) and (max-width: 857px){
+
+  .button_block {
+    position: absolute;
+    top: 39%;
+    left: 30%;
+    display: flex;
+    width: 45vw;
+    justify-content: space-between;
+  }
+
+  .button_info:hover{
+    font-size: 12px;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    background: linear-gradient(20deg, #5E94E6, #6EA7FF);
+    border-radius: 60px;
+    border: none;
+  }
+
+
+  .button_info {
+    font-size: 12px;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    background: linear-gradient(20deg, #251B3C, #6F4DBE);
+    border-radius: 60px;
+    border: none;
+  }
+
+  .button_precommand:hover{
+    font-size: 12px;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    background: linear-gradient(-20deg, #5E94E6, #6EA7FF);
+    border-radius: 60px;
+    border: none;
+  }
+
+
+  .button_precommand {
+    font-size: 12px;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    background: linear-gradient(-20deg, #251B3C, #6F4DBE);
+    border-radius: 60px;
+    border: none;
+  }
+
 }
